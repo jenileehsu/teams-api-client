@@ -1,4 +1,6 @@
 <h1>Team:</h1>
 
-Team Name: <%= @team['team_name'] %><br>
-Sport: <%= @team['sport'] %><br>
+Team Name: <%= @team.team_name %><br>
+Sport: <%= @team.sport %><br>
+
+<%=  button_to "Delete", "/teams/#{@team.id}", method: :delete %>

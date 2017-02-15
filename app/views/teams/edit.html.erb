@@ -1,0 +1,15 @@
+<h1>Edit Team:</h1>
+
+<%= form_tag "/teams/#{@team['id']}", method: :patch do %>
+   <%= label_tag :state %>
+   <%= text_field_tag :state %>
+
+   <%= label_tag :creature %>
+   <%= text_field_tag :creature %>
+   
+   <%= label_tag :sport %>
+   <%= text_field_tag :sport %>
+   
+   <%= submit_tag "Edit Team" %>
+
+<% end %>
